@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name    = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel = "stylesheet" href = "calcu_stylesheet.css">
+    </head>
+    <body>
+        <div id = "calculator">
+            <input type = "text" id = "display" readonly>
+            <div>
+                <button onclick = "appendToDisplay('7', 'digit')">7</button>
+                <button onclick = "appendToDisplay('8', 'digit')">8</button>
+                <button onclick = "appendToDisplay('9', 'digit')">9</button>
+                <button class="operator" onclick = "appendToDisplay('+', 'operator')">+</button>
+            </div>
+            <div>
+                <button onclick = "appendToDisplay('4', 'digit')">4</button>
+                <button onclick = "appendToDisplay('5', 'digit')">5</button>
+                <button onclick = "appendToDisplay('6', 'digit')">6</button>
+                <button class="operator" onclick = "appendToDisplay('-', 'operator')">-</button>
+            </div>
+            <div>
+                <button onclick = "appendToDisplay('1', 'digit')">1</button>
+                <button onclick = "appendToDisplay('2', 'digit')">2</button>
+                <button onclick = "appendToDisplay('3', 'digit')">3</button>
+                <button class="operator" onclick = "appendToDisplay('*', 'operator')">*</button>
+            </div>
+            <div>
+                <button onclick = "clearDisplay()">C</button>
+                <button onclick = "appendToDisplay('0', 'digit')">0</button>
+                <button onclick = "appendToDisplay('.', 'digit')">.</button>
+                <button class="operator" onclick = "appendToDisplay('/', 'operator')">/</button>
+            </div>
+            <div>
+                <button class="calculate" onclick = "calculate()"> = </button>
+                <button class="operator" onclick = "appendToDisplay('%', 'operator')">%</button>
+            </div>
+        </div>
+        <script src="calcu_script.js"></script>
+    </body>
+</html>
